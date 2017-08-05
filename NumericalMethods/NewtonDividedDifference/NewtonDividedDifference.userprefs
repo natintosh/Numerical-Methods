@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{A6467354-8F75-40D8-8DEB-F77C040298AF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewtonDividedDifference/NewtonDividedDifference.cs">
+    <Files>
+      <File FileName="NewtonDividedDifference/Program.cs" Line="10" Column="9" />
+      <File FileName="NewtonDividedDifference/NewtonDividedDifference.cs" Line="51" Column="14" />
+      <File FileName="NewtonDividedDifference/NumericalMethods.cs" Line="58" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NewtonDividedDifference PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

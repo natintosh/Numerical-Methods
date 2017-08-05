@@ -1,0 +1,6 @@
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/bin/Debug/NewtonDividedDifference.exe
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/bin/Debug/NewtonDividedDifference.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/obj/x86/Debug/NewtonDividedDifference.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/obj/x86/Debug/NewtonDividedDifference.exe
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/obj/x86/Debug/NewtonDividedDifference.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonDividedDifference/NewtonDividedDifference/obj/x86/Debug/NewtonDividedDifference.csprojResolveAssemblyReference.cache

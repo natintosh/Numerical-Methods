@@ -1,0 +1,6 @@
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/bin/Debug/LUDecomposition.exe
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/bin/Debug/LUDecomposition.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/obj/x86/Debug/LUDecomposition.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/obj/x86/Debug/LUDecomposition.exe
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/obj/x86/Debug/LUDecomposition.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/LUDecomposition/LUDecomposition/obj/x86/Debug/LUDecomposition.csprojResolveAssemblyReference.cache

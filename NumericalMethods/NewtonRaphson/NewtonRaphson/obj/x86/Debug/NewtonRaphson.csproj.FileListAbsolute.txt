@@ -1,0 +1,6 @@
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/bin/Debug/NewtonRaphson.exe
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/bin/Debug/NewtonRaphson.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/obj/x86/Debug/NewtonRaphson.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/obj/x86/Debug/NewtonRaphson.exe
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/obj/x86/Debug/NewtonRaphson.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/NewtonRaphson/NewtonRaphson/obj/x86/Debug/NewtonRaphson.csprojResolveAssemblyReference.cache

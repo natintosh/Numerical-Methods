@@ -1,0 +1,5 @@
+/home/oluwatobiloba/Projects/NumericalMethods/Bisection/Bisection/bin/Debug/Bisection.exe
+/home/oluwatobiloba/Projects/NumericalMethods/Bisection/Bisection/bin/Debug/Bisection.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/Bisection/Bisection/obj/x86/Debug/Bisection.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/Bisection/Bisection/obj/x86/Debug/Bisection.exe
+/home/oluwatobiloba/Projects/NumericalMethods/Bisection/Bisection/obj/x86/Debug/Bisection.pdb

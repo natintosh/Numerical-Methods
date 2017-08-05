@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{0067E14A-7DC0-4234-9927-2D46EC366F74}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LUDecomposition/Decompostion.cs">
+    <Files>
+      <File FileName="LUDecomposition/ForwBackSubstitution.cs" Line="8" Column="22" />
+      <File FileName="LUDecomposition/Decompostion.cs" Line="30" Column="32" />
+      <File FileName="LUDecomposition/Program.cs" Line="9" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LUDecomposition PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

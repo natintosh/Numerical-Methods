@@ -1,0 +1,6 @@
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/obj/x86/Debug/GuassSeidel.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/bin/Debug/GuassSeidel.exe
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/bin/Debug/GuassSeidel.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/obj/x86/Debug/GuassSeidel.exe
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/obj/x86/Debug/GuassSeidel.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/GuassSeidel/GuassSeidel/obj/x86/Debug/GuassSeidel.csprojResolveAssemblyReference.cache

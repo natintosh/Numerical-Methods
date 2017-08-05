@@ -1,0 +1,6 @@
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/bin/Debug/DirectInterpolation.exe
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/bin/Debug/DirectInterpolation.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/obj/x86/Debug/GaussJordan.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/obj/x86/Debug/DirectInterpolation.exe
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/obj/x86/Debug/DirectInterpolation.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/GaussJordan/GaussJordan/obj/x86/Debug/GaussJordan.csprojResolveAssemblyReference.cache

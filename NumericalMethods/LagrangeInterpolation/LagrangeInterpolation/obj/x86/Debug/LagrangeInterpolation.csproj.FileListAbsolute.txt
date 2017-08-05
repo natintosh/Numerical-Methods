@@ -1,0 +1,5 @@
+/home/oluwatobiloba/Projects/NumericalMethods/LagrangeInterpolation/LagrangeInterpolation/obj/x86/Debug/LagrangeInterpolation.csproj.CoreCompileInputs.cache
+/home/oluwatobiloba/Projects/NumericalMethods/LagrangeInterpolation/LagrangeInterpolation/bin/Debug/LagrangeInterpolation.exe
+/home/oluwatobiloba/Projects/NumericalMethods/LagrangeInterpolation/LagrangeInterpolation/bin/Debug/LagrangeInterpolation.pdb
+/home/oluwatobiloba/Projects/NumericalMethods/LagrangeInterpolation/LagrangeInterpolation/obj/x86/Debug/LagrangeInterpolation.exe
+/home/oluwatobiloba/Projects/NumericalMethods/LagrangeInterpolation/LagrangeInterpolation/obj/x86/Debug/LagrangeInterpolation.pdb

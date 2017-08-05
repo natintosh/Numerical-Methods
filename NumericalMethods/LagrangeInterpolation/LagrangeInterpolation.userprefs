@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{84F1EE64-5FCF-44AD-A70E-32DBCA840FDF}|Default">
+  <MonoDevelop.Ide.ItemProperties.LagrangeInterpolation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LagrangeInterpolation/Interpolation.cs">
+    <Files>
+      <File FileName="LagrangeInterpolation/NumericalMethods.cs" Line="58" Column="1" />
+      <File FileName="LagrangeInterpolation/Program.cs" Line="12" Column="18" />
+      <File FileName="LagrangeInterpolation/Interpolation.cs" Line="72" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
