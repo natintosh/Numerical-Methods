@@ -6,7 +6,7 @@ namespace Bisection
     {
         public static void Main()
 		{
-			Double[] equation = { 1, 0, -1, -2 };
+			Double[] equation = { 25, 5, 1, 106.8 };
             Console.Write("Enter the value for a: ");
             Double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter the value for b: ");
