@@ -6,7 +6,7 @@ namespace LUDecomposition
     {
         public static void Main()
         {
-            Double[,] linearEquation = { 
+            Double[,] matrix = { 
 			{ 25, 5, 1, 106.8 },
 			{ 64, 8, 1, 177.2 },
 			{ 144, 12, 1, 292.2 } };
