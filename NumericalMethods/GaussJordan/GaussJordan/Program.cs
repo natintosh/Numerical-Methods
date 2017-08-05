@@ -6,7 +6,7 @@ namespace GaussJordan
     {
         public static void Main()
         {
-            Double[,] matrix = { { 1, 2, 1, 4 }, { 3, -4, -2, 2 }, { 5, 3, 5, -1 } };
+            Double[,] matrix = { { 25, 5, 1, 106.8 }, { 64, 8, 1, 177.2 }, { 144, 12, 1, 292.2 } };
             ForwardElimination forwardElimination = new ForwardElimination(ref matrix);
             forwardElimination.Eliminate();
             BackwardSubstitution backwardSubstitution = new BackwardSubstitution(matrix);
