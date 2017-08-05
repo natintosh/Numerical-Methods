@@ -10,8 +10,7 @@ namespace GuassSeidel
 			Double[,] linearEquation = new Double[,]{ 
 			{ 25, 5, 1, 106.8 },
 			{ 64, 8, 1, 177.2 },
-			{ 144, 12, 1, 292.2 } }
-			;
+			{ 144, 12, 1, 292.2 } };
 
 
 			Double[][] matrix = new Double[][]{
