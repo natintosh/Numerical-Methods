@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{A6467354-8F75-40D8-8DEB-F77C040298AF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewtonDividedDifference/NewtonDividedDifference.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewtonDividedDifference/Program.cs">
     <Files>
-      <File FileName="NewtonDividedDifference/Program.cs" Line="10" Column="9" />
-      <File FileName="NewtonDividedDifference/NewtonDividedDifference.cs" Line="51" Column="14" />
-      <File FileName="NewtonDividedDifference/NumericalMethods.cs" Line="58" Column="1" />
+      <File FileName="NewtonDividedDifference/Program.cs" Line="12" Column="32" />
+      <File FileName="NewtonDividedDifference/NewtonDividedDifference.cs" Line="107" Column="13" />
+      <File FileName="NewtonDividedDifference/NumericalMethods.cs" Line="7" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

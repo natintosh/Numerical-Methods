@@ -7,6 +7,10 @@ namespace LUDecomposition
         Double[,] upperMatrix;
         Double[,] lowerMatrix;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:LUDecomposition.Decompostion"/> class.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
         public Decompostion(Double[,] matrix)
         {
             this.matrix = matrix;
@@ -14,11 +18,21 @@ namespace LUDecomposition
             PresetLowerMatrix(ref lowerMatrix, upperMatrix);
         }
 
+        /// <summary>
+        /// Decompose this instance.
+        /// </summary>
         public void Decompose()
         {
             Guassian(matrix, ref upperMatrix, ref lowerMatrix);
         }
 
+        /// <summary>
+        /// Guassian the specified matrix, upperMatrix and lowerMatrix.
+        /// </summary>
+        /// <returns>The guassian.</returns>
+        /// <param name="matrix">Matrix.</param>
+        /// <param name="upperMatrix">Upper matrix.</param>
+        /// <param name="lowerMatrix">Lower matrix.</param>
         private static void Guassian(Double[,] matrix, ref Double[,] upperMatrix, ref Double[,] lowerMatrix)
         {
             Console.WriteLine(@"Matrix: ");
@@ -59,6 +73,13 @@ namespace LUDecomposition
             }
         }
 
+        /// <summary>
+        /// Multiplier the specified firstRow, secondRow and index.
+        /// </summary>
+        /// <returns>The multiplier.</returns>
+        /// <param name="firstRow">First row.</param>
+        /// <param name="secondRow">Second row.</param>
+        /// <param name="index">Index.</param>
         private static Double Multiplier(Double[] firstRow, Double[] secondRow, int index)
         {
             Double multiplier = 1;
@@ -66,6 +87,13 @@ namespace LUDecomposition
             return multiplier;
         }
 
+        /// <summary>
+        /// Elimination the specified firstRow, secondRow and multiplier.
+        /// </summary>
+        /// <returns>The elimination.</returns>
+        /// <param name="firstRow">First row.</param>
+        /// <param name="secondRow">Second row.</param>
+        /// <param name="multiplier">Multiplier.</param>
         private static Double[] Elimination(Double[] firstRow, Double[] secondRow, Double multiplier)
         {
             int max = firstRow.Length;
@@ -80,6 +108,13 @@ namespace LUDecomposition
             return secondRow;
         }
 
+        /// <summary>
+        /// Replaces the matrix.
+        /// </summary>
+        /// <returns>The matrix.</returns>
+        /// <param name="upperMatrix">Upper matrix.</param>
+        /// <param name="newRow">New row.</param>
+        /// <param name="position">Position.</param>
         private static Double[,] ReplaceMatrix(ref Double[,] upperMatrix, Double[] newRow, int position)
         {
             int max = newRow.Length;
@@ -90,6 +125,11 @@ namespace LUDecomposition
             return upperMatrix;
         }
 
+        /// <summary>
+        /// Presets the lower matrix.
+        /// </summary>
+        /// <param name="lowerMatrix">Lower matrix.</param>
+        /// <param name="upperMatrix">Upper matrix.</param>
         public void PresetLowerMatrix(ref Double[,] lowerMatrix, Double[,] upperMatrix)
         {
             int rows = upperMatrix.GetLength(0);
@@ -113,10 +153,18 @@ namespace LUDecomposition
             }
         }
 
+        /// <summary>
+        /// Gets the upper matrix.
+        /// </summary>
+        /// <returns>The upper matrix.</returns>
         public Double[,] GetUpperMatrix(){
             return upperMatrix;
         }
 
+        /// <summary>
+        /// Gets the lower matrix.
+        /// </summary>
+        /// <returns>The lower matrix.</returns>
         public Double[,] GetLowerMatrix(){
             return lowerMatrix;
         }

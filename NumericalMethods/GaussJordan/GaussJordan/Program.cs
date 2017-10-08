@@ -4,9 +4,13 @@ namespace GaussJordan
 {
     class MainClass : NumericalMethods
     {
+        /// <summary>
+        /// The entry point of the program, where the program control starts and ends.
+        /// </summary>
         public static void Main()
         {
-            Double[,] matrix = { { 25, 5, 1, 106.8 }, { 64, 8, 1, 177.2 }, { 144, 12, 1, 292.2 } };
+            Console.WriteLine("Find the value of x1 x2 x3 of the matrix given below");
+            Double[,] matrix = { { 1, 2, 1, 4 }, { 3, -4, -2, 2 }, { 5, 3, 5, -1 } };
             ForwardElimination forwardElimination = new ForwardElimination(ref matrix);
             forwardElimination.Eliminate();
             BackwardSubstitution backwardSubstitution = new BackwardSubstitution(matrix);

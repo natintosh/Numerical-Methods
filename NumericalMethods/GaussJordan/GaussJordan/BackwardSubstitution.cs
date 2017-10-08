@@ -6,6 +6,10 @@ namespace GaussJordan
     {
         Double[,] matrix;
         protected internal Double[] answers;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:GaussJordan.BackwardSubstitution"/> class.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
         public BackwardSubstitution(Double[,] matrix){
 			this.matrix = matrix;
             answers = new Double[matrix.GetLength(0)];
@@ -15,6 +19,9 @@ namespace GaussJordan
 			}
         }
 
+        /// <summary>
+        /// Substitute this instance.
+        /// </summary>
         public void Substitute()
 		{
 			int degrees = matrix.Rank;
@@ -24,6 +31,7 @@ namespace GaussJordan
             Double[] coefficients = new Double[rows];
             Console.WriteLine(@"Rows: {0} Cols {1}", rows, cols);
             Console.WriteLine(@"Determinant: {0}", Determinant(matrix));
+            Console.WriteLine();
             for (int i = rows -1; i >= 0; i--)
             {
                 for (int j = 0; j < rows; j++)
@@ -36,11 +44,16 @@ namespace GaussJordan
             Console.WriteLine();
             DisplayAnswer();
         }
-
+        /// <summary>
+        /// Substitution the specified coefficients, val and index.
+        /// </summary>
+        /// <returns>The substitution.</returns>
+        /// <param name="coefficients">Coefficients.</param>
+        /// <param name="val">Value.</param>
+        /// <param name="index">Index.</param>
         private void Substitution(Double[] coefficients, Double val, int index)
         {
             int length = coefficients.Length;
-            DisplayMatrix(coefficients);
             Double summation = val;
             for (int i = length - 1; i >= 0; i--)
             {
@@ -52,7 +65,11 @@ namespace GaussJordan
 			answers[index] = summation / coefficients[index];
         }
 
-
+        /// <summary>
+        /// Determinant the specified matrix.
+        /// </summary>
+        /// <returns>The determinant.</returns>
+        /// <param name="matrix">Matrix.</param>
 		private static Double Determinant(Double[,] matrix)
 		{
 			int length = matrix.GetLength(0);
@@ -64,6 +81,9 @@ namespace GaussJordan
 			return summation;
 		}
 
+        /// <summary>
+        /// Displaies the answer.
+        /// </summary>
         private void DisplayAnswer()
         {
 			for (int i = 0; i < answers.Length; i++)

@@ -4,24 +4,29 @@ namespace GuassSeidel
 {
     class LinearAlgebraicEquation: NumericalMethods
     {
+        /// <summary>
+        /// The entry point of the program, where the program control starts and ends.
+        /// </summary>
         public static void Main()
         {
+            Console.WriteLine("Find the value of x1 x2 x3 of the equation");
 
-			Double[,] linearEquation = new Double[,]{ 
-			{ 25, 5, 1, 106.8 },
-			{ 64, 8, 1, 177.2 },
-			{ 144, 12, 1, 292.2 } };
+			Double[,] linearEquation = new Double[,]{
+				 { 1, 2, 1, 4 },
+				 { 3, -4, -2, 2 },
+				 { 5, 3, 5, 1 }
+			};
 
 
 			Double[][] matrix = new Double[][]{
-                new Double[] { 25, 5, 1, 106.8 },
-                new Double[]  { 64, 8, 1, 177.2 },
-                new Double[] { 144, 12, 1, 292.2 }
+                new Double[] { 1, 2, 1 },
+                new Double[]  { 3, -4, -2 },
+                new Double[] { 5, 3, 5 }
             };
 
             DisplayMatrix(linearEquation);
 
-            Double[] bee = { 106.8, 177.2, 292.2 };
+            Double[] bee = { 4, 2, -1 };
             Double[] guess = { 1, 1, 1 };
 
 			Console.WriteLine("Enter the initial guess"); 

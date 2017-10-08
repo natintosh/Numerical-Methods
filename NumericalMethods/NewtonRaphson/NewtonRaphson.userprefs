@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{417B9CE2-2192-4811-A9A6-747BE48CA920}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NewtonRaphson/NewtonRaphson.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NewtonRaphson/Program.cs">
     <Files>
-      <File FileName="NewtonRaphson/Program.cs" Line="9" Column="26" />
-      <File FileName="NewtonRaphson/NewtonRaphson.cs" Line="26" Column="14" />
-      <File FileName="NewtonRaphson/NumericalMethods.cs" Line="32" Column="4" />
+      <File FileName="NewtonRaphson/Program.cs" Line="10" Column="31" />
+      <File FileName="NewtonRaphson/NewtonRaphson.cs" Line="20" Column="10" />
+      <File FileName="NewtonRaphson/NumericalMethods.cs" Line="5" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

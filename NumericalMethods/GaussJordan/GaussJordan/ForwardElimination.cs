@@ -4,15 +4,25 @@ namespace GaussJordan
     internal class ForwardElimination:NumericalMethods
     {
         Double[,] matrix;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:GaussJordan.ForwardElimination"/> class.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
         public ForwardElimination(ref Double[,] matrix)
         {
             this.matrix = matrix;
         }
-
+        /// <summary>
+        /// Eliminate this instance.
+        /// </summary>
         public void Eliminate(){
             Guassian(ref matrix);
         }
-
+        /// <summary>
+        /// Guassian the specified matrix.
+        /// </summary>
+        /// <returns>The guassian.</returns>
+        /// <param name="matrix">Matrix.</param>
         private static void Guassian(ref Double[,] matrix)
 		{
 			DisplayMatrix(matrix);
@@ -44,14 +54,26 @@ namespace GaussJordan
 				}
 			}
 		}
-
+        /// <summary>
+        /// Multiplier the specified firstRow, secondRow and index.
+        /// </summary>
+        /// <returns>The multiplier.</returns>
+        /// <param name="firstRow">First row.</param>
+        /// <param name="secondRow">Second row.</param>
+        /// <param name="index">Index.</param>
         private static Double Multiplier(Double[] firstRow, Double[] secondRow, int index)
 		{
 			Double multiplier = 1;
 			multiplier = secondRow[index] / firstRow[index];
 			return multiplier;
 		}
-
+        /// <summary>
+        /// Elimination the specified firstRow, secondRow and multiplier.
+        /// </summary>
+        /// <returns>The elimination.</returns>
+        /// <param name="firstRow">First row.</param>
+        /// <param name="secondRow">Second row.</param>
+        /// <param name="multiplier">Multiplier.</param>
         private static Double[] Elimination(Double[] firstRow, Double[] secondRow, Double multiplier)
 		{
 			int max = firstRow.Length;
@@ -65,7 +87,13 @@ namespace GaussJordan
 			}
 			return secondRow;
 		}
-
+        /// <summary>
+        /// Replaces the matrix.
+        /// </summary>
+        /// <returns>The matrix.</returns>
+        /// <param name="matrix">Matrix.</param>
+        /// <param name="newRow">New row.</param>
+        /// <param name="position">Position.</param>
         private static Double[,] ReplaceMatrix(ref Double[,] matrix, Double[] newRow, int position)
 		{
 			int max = newRow.Length;

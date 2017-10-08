@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{86C1AE3A-C31E-492F-BBD6-AEAD2D2FB383}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GaussJordan/ForwardElimination.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GaussJordan/BackwardSubstitution.cs">
     <Files>
-      <File FileName="GaussJordan/ForwardElimination.cs" Line="2" Column="21" />
-      <File FileName="GaussJordan/Program.cs" Line="11" Column="25" />
-      <File FileName="GaussJordan/NumericalMethods.cs" Line="1" Column="1" />
-      <File FileName="GaussJordan/BackwardSubstitution.cs" Line="5" Column="56" />
+      <File FileName="GaussJordan/ForwardElimination.cs" Line="91" Column="13" />
+      <File FileName="GaussJordan/Program.cs" Line="8" Column="13" />
+      <File FileName="GaussJordan/NumericalMethods.cs" Line="66" Column="13" />
+      <File FileName="GaussJordan/BackwardSubstitution.cs" Line="85" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

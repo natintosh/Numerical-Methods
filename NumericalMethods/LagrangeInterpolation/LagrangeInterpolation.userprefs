@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.LagrangeInterpolation PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="LagrangeInterpolation/Interpolation.cs">
     <Files>
-      <File FileName="LagrangeInterpolation/NumericalMethods.cs" Line="58" Column="1" />
-      <File FileName="LagrangeInterpolation/Program.cs" Line="12" Column="18" />
-      <File FileName="LagrangeInterpolation/Interpolation.cs" Line="72" Column="45" />
+      <File FileName="LagrangeInterpolation/NumericalMethods.cs" Line="71" Column="13" />
+      <File FileName="LagrangeInterpolation/Program.cs" Line="25" Column="11" />
+      <File FileName="LagrangeInterpolation/Interpolation.cs" Line="10" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

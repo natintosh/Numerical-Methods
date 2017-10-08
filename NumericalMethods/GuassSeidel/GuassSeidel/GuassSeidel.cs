@@ -5,14 +5,19 @@ namespace GuassSeidel
     {
 
 
-        public static double MaxError = .00001;
+        public const double EPSILON = 1E-5;
         public static double MaxIteration = 100;
         public static double Lambda = .5;
         public static double[] answer;
         Double[][] matrix;
         Double[] bee;
         Double[] guess;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:GuassSeidel.GuassSeidel"/> class.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
+        /// <param name="bee">Bee.</param>
+        /// <param name="guess">Guess.</param>
         public GuassSeidel(Double[][] matrix, Double[] bee, Double[] guess)
         {
             this.matrix = matrix;
@@ -21,7 +26,13 @@ namespace GuassSeidel
             GaussSeidel(matrix, bee, guess);
         }
 
-
+        /// <summary>
+        /// Gausses the seidel.
+        /// </summary>
+        /// <returns>The seidel.</returns>
+        /// <param name="matrix">Matrix.</param>
+        /// <param name="bee">Bee.</param>
+        /// <param name="root">Root.</param>
         public static double[] GaussSeidel(double[][] matrix, double[] bee, double[] root)
         {
             int length = matrix.Length;
@@ -69,11 +80,11 @@ namespace GuassSeidel
                     }
 
                     root[i] = Lambda * sum + (1 - Lambda) * old;
-                    if (root[i] != 0)
+                    if (Math.Abs(root[i]) > EPSILON)
                     {
 						double ea = Math.Abs((root[i] - old) / root[i]) * 100;
 						Console.Write("{0, -4:N} \t {1, -6:N} \t", root[i], ea);
-                        if (ea < MaxError)
+                        if (ea < EPSILON)
 						{
                             return root;
                         }

@@ -8,6 +8,11 @@ namespace LUDecomposition
         Double[] zee;
         Double[] bee;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:LUDecomposition.ForwBackSubstitution"/> class.
+        /// </summary>
+        /// <param name="upperMatrix">Upper matrix.</param>
+        /// <param name="lowerMatrix">Lower matrix.</param>
         public ForwBackSubstitution(Double[,] upperMatrix, Double[,] lowerMatrix)
         {
             int rows = upperMatrix.GetLength(0);
@@ -22,7 +27,9 @@ namespace LUDecomposition
 			}
         }
 
-
+        /// <summary>
+        /// Substitute this instance.
+        /// </summary>
 		public void Substitute()
 		{
             int degrees = upperMatrix.Rank;
@@ -56,6 +63,9 @@ namespace LUDecomposition
             DisplayAnswer(bee);
 		}
 
+        /// <summary>
+        /// Replaces the bee.
+        /// </summary>
         private void ReplaceBee(){
             int rows = upperMatrix.GetLength(0);
             int cols = upperMatrix.GetLength(1);
@@ -67,6 +77,14 @@ namespace LUDecomposition
             DisplayMatrix(upperMatrix);
         }
 
+        /// <summary>
+        /// Substitution the specified answer, coefficients, val and index.
+        /// </summary>
+        /// <returns>The substitution.</returns>
+        /// <param name="answer">Answer.</param>
+        /// <param name="coefficients">Coefficients.</param>
+        /// <param name="val">Value.</param>
+        /// <param name="index">Index.</param>
         private void Substitution(ref Double[] answer, Double[] coefficients, Double val, int index)
 		{
 			int length = coefficients.Length;
@@ -81,6 +99,10 @@ namespace LUDecomposition
             answer[index] = summation / coefficients[index];
 		}
 
+        /// <summary>
+        /// Displaies the answer.
+        /// </summary>
+        /// <param name="answer">Answer.</param>
         private void DisplayAnswer(Double[] answer)
 		{
             for (int i = 0; i < answer.Length; i++)

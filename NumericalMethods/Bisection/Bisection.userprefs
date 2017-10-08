@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{F2E7A1D4-9F5A-44AD-88FD-29AC39A342EF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Bisection/Bisection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bisection/Program.cs">
     <Files>
-      <File FileName="Bisection/Program.cs" Line="9" Column="41" />
-      <File FileName="Bisection/Bisection.cs" Line="48" Column="18" />
-      <File FileName="Bisection/NumericalMethods.cs" Line="10" Column="4" />
+      <File FileName="Bisection/Program.cs" Line="10" Column="28" />
+      <File FileName="Bisection/Bisection.cs" Line="39" Column="29" />
+      <File FileName="Bisection/NumericalMethods.cs" Line="76" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

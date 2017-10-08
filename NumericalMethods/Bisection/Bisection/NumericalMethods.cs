@@ -3,12 +3,24 @@ namespace Bisection
 {
 	class NumericalMethods
 	{
+        /// <summary>
+        /// Trues the error.
+        /// </summary>
+        /// <returns>The error.</returns>
+        /// <param name="trueValue">True value.</param>
+        /// <param name="approximation">Approximation.</param>
 		public static Double TrueError(Double trueValue, Double approximation)
 		{
 			Double trueError = Math.Abs(trueValue - approximation);
 			return Math.Abs(trueError);
 		}
 
+        /// <summary>
+        /// Relatives the true error.
+        /// </summary>
+        /// <returns>The true error.</returns>
+        /// <param name="trueValue">True value.</param>
+        /// <param name="approximation">Approximation.</param>
 		public static Double RelativeTrueError(Double trueValue, Double approximation)
 		{
 			Double numerator = Math.Abs(trueValue - approximation);
@@ -16,11 +28,23 @@ namespace Bisection
 			return Math.Abs((numerator / denominator));
 		}
 
+        /// <summary>
+        /// Approximates the error.
+        /// </summary>
+        /// <returns>The error.</returns>
+        /// <param name="presentAppr">Present appr.</param>
+        /// <param name="previousAppr">Previous appr.</param>
 		public static Double ApproximateError(Double presentAppr, Double previousAppr)
 		{
 			return Math.Abs(presentAppr - previousAppr);
 		}
 
+        /// <summary>
+        /// Absolutes the relative error.
+        /// </summary>
+        /// <returns>The relative error.</returns>
+        /// <param name="presentAppr">Present appr.</param>
+        /// <param name="previousAppr">Previous appr.</param>
 		public static Double AbsoluteRelativeError(Double presentAppr, Double previousAppr)
 		{
 			Double numerator = presentAppr - previousAppr;
@@ -28,6 +52,10 @@ namespace Bisection
 			return Math.Abs((numerator / denominator));
 		}
 
+        /// <summary>
+        /// Displaies the matrix.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
 		public static void DisplayMatrix(Double[,] matrix)
 		{
 			int degree = matrix.Rank;
@@ -44,6 +72,10 @@ namespace Bisection
 			}
 		}
 
+        /// <summary>
+        /// Displaies the matrix.
+        /// </summary>
+        /// <param name="matrix">Matrix.</param>
 		public static void DisplayMatrix(Double[] matrix)
 		{
 			int degree = matrix.Rank;

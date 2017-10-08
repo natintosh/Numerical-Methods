@@ -1,7 +1,7 @@
 ﻿using System;
 namespace LagrangeInterpolation
 {
-    internal class Interpolation:NumericalMethods
+    internal class Interpolation : NumericalMethods
     {
         Double[,] table;
         Double[] functions;
@@ -9,26 +9,40 @@ namespace LagrangeInterpolation
         Double[] terms;
         Double[] values;
         Double[] answers;
-        Double t;
+        readonly Double t;
         Double answer = 0;
-        int orderPlus1;
+        int order;
         Double[] weightFunction;
 
-        public Interpolation(Double[,] table, Double[] functions, Double[] time, Double t, int orderPlus1)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:LagrangeInterpolation.Interpolation"/> class.
+        /// </summary>
+        /// <param name="table">Table.</param>
+        /// <param name="functions">Functions.</param>
+        /// <param name="time">Time.</param>
+        /// <param name="t">T.</param>
+        /// <param name="order">Order.</param>
+        public Interpolation(Double[,] table, Double[] functions, Double[] time, Double t, int order)
         {
             this.table = table;
             this.functions = functions;
             this.time = time;
             this.t = t;
-            this.orderPlus1 = orderPlus1;
-            terms = new Double[orderPlus1];
-            values = new Double[orderPlus1];
-            answers = new Double[orderPlus1];
-            weightFunction = new Double[orderPlus1];
-            GetIndex();
+            this.order = order;
+            terms = new Double[order];
+            values = new Double[order];
+            answers = new Double[order];
+            weightFunction = new Double[order];
+            GetIndexOfX();
         }
 
-        private void GetIndex()
+        public double[] WeightFunction { get => weightFunction; set => weightFunction = value; }
+        public int Order { get => order; set => order = value; }
+
+        /// <summary>
+        /// Gets the index of x.
+        /// </summary>
+        private void GetIndexOfX()
         {
             int rows = table.GetLength(0);
             int cols = table.GetLength(1);
@@ -41,28 +55,33 @@ namespace LagrangeInterpolation
                     break;
                 }
             }
-            for (int i = 0; i < orderPlus1; i++)
+            for (int i = 0; i < order; i++)
             {
-                weightFunction[i] = 1; 
-                if (i % 2  == 0)
+                weightFunction[i] = 1;
+                if (i % 2 == 0)
                 {
                     terms[i] = time[index - i];
-					values[i] = functions[index - i];
-
+                    values[i] = functions[index - i];
                 }
                 else
                 {
-                    terms[i] = time[index + 1];
-                    values[i] = functions[index + 1];
-                    index = index + 1;
+                    if (index + 1 > terms.Length)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("Matrix Out of Bound reduce the n : the order");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        terms[i] = time[index + 1];
+                        values[i] = functions[index + 1];
+                        index = index + 1;
+                    }
                 }
             }
-            DisplayMatrix(terms);
-            Console.WriteLine();
-            DisplayMatrix(values);
-            Console.WriteLine();
 
-            for (int i = 0; i < orderPlus1; i++)
+            for (int i = 0; i < order; i++)
             {
                 WeightingFunction(i);
             }
@@ -70,30 +89,43 @@ namespace LagrangeInterpolation
             DisplayMatrix(terms);
             Console.WriteLine();
             Console.WriteLine("Values of L(x)");
-            DisplayMatrix(weightFunction);
 
-            for (int i = 0; i < orderPlus1; i++)
+            foreach (var item in weightFunction)
+            {
+                Console.WriteLine("{0}", item);
+            }
+
+            for (int i = 0; i < order; i++)
             {
                 answers[i] = weightFunction[i] * values[i];
                 answer = answer + answers[i];
             }
 
-            Console.WriteLine("f({0}) = {1}",t ,answer);
+            Console.WriteLine();
+            Console.Write("Result: ");
+            Console.WriteLine("f({0}) = {1:#.#####}", t, answer);
 
         }
 
+        /// <summary>
+        /// Weightings the function.
+        /// </summary>
+        /// <param name="i">The index.</param>
         private void WeightingFunction(int i)
         {
             Double numerator;
-			Double denominator;
-			Console.WriteLine("ti = {0}", terms[i]);
-            for (int j = 0; j < orderPlus1; j++)
-			{
+            Double denominator;
+            Console.Write("When ti is ");
+            Console.WriteLine("ti = {0}", terms[i]);
+            Console.WriteLine("tj is");
+            for (int j = 0; j < order; j++)
+            {
+
                 if (j != i)
-				{
-                    Console.WriteLine("tj = {0}" ,terms[j]);
+                {
+                    Console.WriteLine("tj = {0}", terms[j]);
                     numerator = t - terms[j];
-					denominator = terms[i] - terms[j];
+                    denominator = terms[i] - terms[j];
                     weightFunction[i] = weightFunction[i] * (numerator / denominator);
                 }
             }

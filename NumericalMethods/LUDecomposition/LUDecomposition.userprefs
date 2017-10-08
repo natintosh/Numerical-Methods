@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{0067E14A-7DC0-4234-9927-2D46EC366F74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LUDecomposition/Decompostion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LUDecomposition/NumericalMethods.cs">
     <Files>
-      <File FileName="LUDecomposition/ForwBackSubstitution.cs" Line="8" Column="22" />
-      <File FileName="LUDecomposition/Decompostion.cs" Line="30" Column="32" />
-      <File FileName="LUDecomposition/Program.cs" Line="9" Column="43" />
+      <File FileName="LUDecomposition/ForwBackSubstitution.cs" Line="94" Column="20" />
+      <File FileName="LUDecomposition/Decompostion.cs" Line="162" Column="10" />
+      <File FileName="LUDecomposition/Program.cs" Line="8" Column="13" />
+      <File FileName="LUDecomposition/NumericalMethods.cs" Line="73" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.LUDecomposition PreferredExecutionTarget="MonoDevelop.Default" />
